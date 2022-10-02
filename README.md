@@ -10,9 +10,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot.jpg)
+![](./Screenshot.png)
 
 ### Links
 

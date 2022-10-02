@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/ecommerce-product-page-vanillajs-RLMmk4vIk-)
 - [Live Site](https://jeda777.github.io/e-commerce_product_page_vanillaJS/)
 
 ## Built with

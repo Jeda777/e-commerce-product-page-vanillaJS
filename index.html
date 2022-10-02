@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <script src="index.js" defer></script>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header_left">
+
+      <button id="mobile_menu_button"></button>
+
+      <nav id="mobile_nav">
+        <ul>
+          <li>
+            <a href="#">Collections</a>
+          </li>
+          <li>
+            <a href="#">Men</a>
+          </li>
+          <li>
+            <a href="#">Women</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <img class="header_logo" src="./images/logo.svg" alt="Sneakers">
+
+      <nav id="desktop_nav">
+        <ul>
+          <li>
+            <a href="#">Collections</a>
+          </li>
+          <li>
+            <a href="#">Men</a>
+          </li>
+          <li>
+            <a href="#">Women</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="header_right">
+
+      <button id="cart_button">
+        <img src="./images/icon-cart.svg" alt="cart image">
+        <p id="cart_button_count"></p></img>
+      </button>
+
+      <div id="cart">
+
+        <div class="cart_heading">
+          <p>Cart</p>
+        </div>
+
+        <div class="cart_content">
+
+          <ul id="cart_ul">
+            <p id="cart_empty_text">Your cart is empty.</p>
+          </ul>
+
+          <div class="cart_checkout_button_container">
+            <button id="cart_checkout_button">Checkout</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <button class="profile_button">
+        <img src="./images/image-avatar.png" alt="profile image">
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="images_container">
+
+      <div class="main_img_button_container">
+        <button id="mobile_previous_button" class="mobile_image_buttons"><img src="./images/icon-previous-white.svg"
+            alt=""></button>
+        <button id="main_img_button">
+          <img id="main_img" src="" alt="shoes">
+        </button>
+        <button id="mobile_next_button" class="mobile_image_buttons"><img src="./images/icon-next-white.svg"
+            alt=""></button>
+      </div>
+
+      <div class="main_img_thumbnails_container">
+
+        <button id="main_img_thumbnail_button_0" class="main_img_thumbnails_button main_img_thumbnails_button--active">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        </button>
+
+        <button id="main_img_thumbnail_button_1" class="main_img_thumbnails_button">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="">
+        </button>
+
+        <button id="main_img_thumbnail_button_2" class="main_img_thumbnails_button">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="">
+        </button>
+
+        <button id="main_img_thumbnail_button_3" class="main_img_thumbnails_button">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="">
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="item_info_container">
+      <h3>Sneaker Company</h3>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price_info">
+        <h4>$125.00 <span>50%</span></h4>
+        <h5>$250.00</h5>
+      </div>
+      <div class="add_to_cart_container">
+        <div class="add_to_cart_input_container">
+          <button id="decrease_item_count" class="input_item_count_buttons"></button>
+          <input type="number" id="add_to_cart_count_input" value="0" step="1" inputmode="numeric">
+          <button id="increase_item_count" class="input_item_count_buttons"></button>
+        </div>
+        <button id="add_to_cart_button"><img src="./images/icon-cart-white.svg" alt="cart"> Add to cart</button>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="lightbox">
+    <div class="lightbox_container">
+      <button id="lightbox_close_button"></button>
+      <div class="lightbox_images_container">
+
+        <div class="lightbox_main_img_button_container">
+          <button id="lightbox_previous_button" class="lightbox_image_buttons">
+            <div></div>
+          </button>
+          <button id="lightbox_main_img_button">
+            <img id="lightbox_main_img" src="" alt="shoes">
+          </button>
+          <button id="lightbox_next_button" class="lightbox_image_buttons">
+            <div></div>
+          </button>
+        </div>
+
+        <div class="main_img_thumbnails_container">
+
+          <button id="lightbox_main_img_thumbnail_button_0"
+            class="main_img_thumbnails_button main_img_thumbnails_button--active">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          </button>
+
+          <button id="lightbox_main_img_thumbnail_button_1" class="main_img_thumbnails_button">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="">
+          </button>
+
+          <button id="lightbox_main_img_thumbnail_button_2" class="main_img_thumbnails_button">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="">
+          </button>
+
+          <button id="lightbox_main_img_thumbnail_button_3" class="main_img_thumbnails_button">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="">
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Jeda777">Jakub Jęda</a>.
+  </div>
+</body>
+
+</html>

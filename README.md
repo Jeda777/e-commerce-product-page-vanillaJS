@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://www.frontendmentor.io/solutions/ecommerce-product-page-vanillajs-RLMmk4vIk-)
-- [Live Site](https://jeda777.github.io/e-commerce_product_page_vanillaJS/)
+- [Live Site](https://jeda777.github.io/e-commerce-product-page-vanillaJS/)
 
 ## Built with
 
